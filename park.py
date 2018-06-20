@@ -125,6 +125,15 @@ for i in range (10):
 
 
 
+WEIGHTS ="checkpoint_layer_2_hidden_130_epoch_270.hdf5"
+# Loading the trained weights
+model.load_weights(WEIGHTS)
+generate_text(model, GENERATE_LENGTH, VOCAB_SIZE, ix_to_char)
+print('\n\n')
+
+
+
+
 
 
 
