@@ -115,17 +115,8 @@ print('\n\n')
 #Cuidar de no reemplazar el pickle original
 with open('ix_to_char.pickle', 'rb') as handle:
     ix_to_char = pickle.load(handle)
-for i in range (10):    
-    WEIGHTS ="checkpoint_layer_2_hidden_130_epoch_40.hdf5"
-    # Loading the trained weights
-    model.load_weights(WEIGHTS)
-    generate_text(model, GENERATE_LENGTH, VOCAB_SIZE, ix_to_char)
-    print('\n\n')
 
-
-
-
-WEIGHTS ="checkpoint_layer_2_hidden_130_epoch_270.hdf5"
+WEIGHTS ="checkpoint_layer_2_hidden_130_epoch_20.hdf5"
 # Loading the trained weights
 model.load_weights(WEIGHTS)
 generate_text(model, GENERATE_LENGTH, VOCAB_SIZE, ix_to_char)
