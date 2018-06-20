@@ -101,17 +101,6 @@ model.add(Activation('softmax'))
 #"Compilando" = instanciando la RNN con su función de pérdida y optimización
 model.compile(loss="categorical_crossentropy", optimizer="rmsprop")
 
-
-#Cuidar de no reemplazar el pickle original
-with open('ix_to_char.pickle', 'rb') as handle:
-    ix_to_char = pickle.load(handle)
-    
-WEIGHTS ="checkpoint_layer_2_hidden_130_epoch_250.hdf5"
-# Loading the trained weights
-model.load_weights(WEIGHTS)
-generate_text(model, GENERATE_LENGTH, VOCAB_SIZE, ix_to_char)
-print('\n\n')
-
 #Cuidar de no reemplazar el pickle original
 with open('ix_to_char.pickle', 'rb') as handle:
     ix_to_char = pickle.load(handle)
