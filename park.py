@@ -12,15 +12,15 @@ import pickle
 #Archivo de texto 
 DATA_DIR = "./data2.txt" 
 #Modificar BATCH_SIZE o HIDDEN_DIM en caso tengan problemas de memoria
-BATCH_SIZE = 60
-HIDDEN_DIM = 130 #500
+BATCH_SIZE = 100
+HIDDEN_DIM = 300 #500
 #Parametro para longitud de secuencia a analizar
 SEQ_LENGTH = 100
 #Parametro para cargar un pesos previamente entrenados (checkpoint)
 WEIGHTS = '' 
 
 #Parametro para indicar cuantos caracteres generar en cada prueba
-GENERATE_LENGTH = 300 
+GENERATE_LENGTH = 250 
 #Parametros para la red neuronal
 LAYER_NUM = 2 
 NB_EPOCH = 20
