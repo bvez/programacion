@@ -105,31 +105,8 @@ model.compile(loss="categorical_crossentropy", optimizer="rmsprop")
 with open('ix_to_char.pickle', 'rb') as handle:
     ix_to_char = pickle.load(handle)
 
-WEIGHTS ="checkpoint_layer_2_hidden_130_epoch_20.hdf5"
+WEIGHTS ="checkpoint_layer_2_hidden_300_epoch_20.hdf5"
 # Loading the trained weights
 model.load_weights(WEIGHTS)
 generate_text(model, GENERATE_LENGTH, VOCAB_SIZE, ix_to_char)
 print('\n\n')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
