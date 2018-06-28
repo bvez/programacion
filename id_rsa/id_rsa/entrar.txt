@@ -1,1 +1,0 @@
-ssh -i id_rsa bruno.espezua@35.190.178.13
